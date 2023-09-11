@@ -7,7 +7,7 @@ package main
 import (
 	"fmt"
 
-	"gonum.org/v1/hdf5"
+	"github.com/weaviate/hdf5"
 )
 
 const (

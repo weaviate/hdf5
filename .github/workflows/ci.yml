@@ -20,7 +20,7 @@ jobs:
         GODEBUG: cgocheck=0
     defaults:
         run:
-            working-directory: ${{ env.GOPATH }}/src/gonum.org/v1/hdf5
+            working-directory: ${{ env.GOPATH }}/src/github.com/weaviate/hdf5
 
     steps:
     - name: Install Go
@@ -44,7 +44,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-          path: ${{ env.GOPATH }}/src/gonum.org/v1/hdf5
+          path: ${{ env.GOPATH }}/src/github.com/weaviate/hdf5
 
     - name: Install Windows packages
       if: matrix.platform == 'windows-latest'
